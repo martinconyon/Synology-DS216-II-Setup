@@ -1,4 +1,4 @@
-# Synology DS216+II Setup Instructions
+# Synology DS216+II Setup Instructions (Part 1)
 
 This guide is written for **future you**, so you can set up your Synology DS216+II NAS without frustration. It includes all the steps you have done so far, including downloading necessary software, resetting the NAS, and reinstalling DiskStation Manager (DSM).
 
