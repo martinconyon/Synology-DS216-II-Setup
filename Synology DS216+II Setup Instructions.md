@@ -71,15 +71,19 @@ If the NAS was partially set up before or you want to start fresh:
 1. **Locate the RESET Button:**
    - The RESET button is on the **back panel**, near the LAN port. It is a small recessed button.
 
-2. **Perform a Reset:**
+2. **Perform a Soft Reset (Network and Admin Settings Only):**
    - Use a paperclip to press and hold the RESET button.
    - Wait for the first beep (**approximately 4 seconds**) and release.
-   - If doing a hard reset:
-     - Press and hold the RESET button again until you hear **three beeps**.
 
-3. **What Happens Next:**
-   - The NAS will reset its network settings and admin credentials (soft reset).
-   - For a hard reset, the NAS will return to a "Not Installed" state, allowing you to reinstall DSM.
+3. **Perform a Hard Reset (Complete Factory Reset):**
+   - Use a paperclip to press and hold the RESET button.
+   - Wait for the first beep (**approximately 4 seconds**) and release.
+   - Then press and hold the RESET button again until you hear **three beeps**.
+   - The NAS will return to a "Not Installed" state, wiping all settings.
+
+4. **What Happens Next:**
+   - The NAS will reset its network settings, admin credentials, and configuration.
+   - After the hard reset, the system will require a fresh DSM installation.
 
 ---
 
@@ -88,12 +92,15 @@ If the NAS was partially set up before or you want to start fresh:
 1. **Access the NAS After Reset:**
    - Open your browser and go to:
      - `find.synology.com` **or** `http://diskstation:5000`.
-   - The Web Assistant will detect the NAS and prompt to install DSM.
+   - If that doesn’t work, use the IP address shown in Synology Assistant (e.g., `http://192.168.1.191`).
 
-2. **Follow the On-Screen Instructions:**
-   - Click **Install DSM**.
-   - Format the drives if prompted (this will erase all data on the drives).
-   - Set up your admin account and basic network settings.
+2. **Install DSM:**
+   - Follow the on-screen instructions to install the latest DSM.
+   - If prompted, format the drives (this will erase all data).
+   - Set up your admin account with a secure username and password.
+
+3. **Skip Synology Account Integration (Optional):**
+   - If you don't want to use a Synology account, skip this step during setup.
 
 ---
 
@@ -114,7 +121,8 @@ If the NAS was partially set up before or you want to start fresh:
 - **Why Reset?**
   - Resetting the NAS is useful if you've forgotten the admin credentials or want to start fresh.
 - **Reset Button Details:**
-  - Use the RESET button on the back panel near the LAN port for all reset actions.
+  - Soft reset: Press and hold until **1 beep** (~4 seconds).
+  - Hard reset: Press and hold until **1 beep** (~4 seconds), release, then press again until **3 beeps**.
 - **Backup Before Reset:**
   - A hard reset erases all settings and data. Make sure to back up anything important beforehand.
 
@@ -125,6 +133,8 @@ If the NAS was partially set up before or you want to start fresh:
 - **Can't Find the NAS?**
   - Ensure the NAS is connected to your router and powered on.
   - Double-check that the RESET process completed correctly.
+  - Use the direct IP address (e.g., `http://192.168.1.191`) if `find.synology.com` doesn’t work.
+
 - **Forgot Admin Credentials?**
   - Use the RESET button to perform a soft reset and regain access.
 
